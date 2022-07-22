@@ -22,6 +22,12 @@
 },
 "subnet1Name": {
 "value": "ServerSubnet"
+ },
+"subnet2Prefix": {
+"value": "10.1.2.0/24"
+},
+"subnet1Name": {
+"value": "DomainSubnet"
 }
   }
 
