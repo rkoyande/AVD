@@ -1,0 +1,183 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "artifactsLocation": {
+            "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/Configuration_06-15-2022.zip"
+        },
+        "nestedTemplatesLocation": {
+            "value": "https://wvdportalstorageblob.blob.core.windows.net/galleryartifacts/armtemplates/Hostpool_07-27-2022/nestedTemplates/"
+        },
+        "tokenExpirationTime": {
+            "value": "2022-08-05T08:34:33.981Z"
+        },
+        "vmTemplate": {
+            "value": "{\"domain\":\"adatum.com\",\"galleryImageOffer\":\"Windows-10\",\"galleryImagePublisher\":\"MicrosoftWindowsDesktop\",\"galleryImageSKU\":\"19h2-evd\",\"imageType\":\"Gallery\",\"imageUri\":null,\"customImageId\":null,\"namePrefix\":\"SalesPC1\",\"osDiskType\":\"StandardSSD_LRS\",\"vmSize\":{\"id\":\"Standard_DS1_v2\",\"cores\":1,\"ram\":3.5},\"galleryItemId\":\"Microsoftwindowsdesktop.windows-1019h2-evd\",\"hibernate\":false,\"diskSizeGB\":0}"
+        },
+        "intune": {
+            "value": false
+        },
+        "hostpoolName": {
+            "value": "SalesHP"
+        },
+        "hostpoolDescription": {
+            "value": "Created through the Azure Virtual Desktop extension"
+        },
+        "location": {
+            "value": "eastus"
+        },
+        "validationEnvironment": {
+            "value": false
+        },
+        "hostpoolType": {
+            "value": "Pooled"
+        },
+        "loadBalancerType": {
+            "value": "BreadthFirst"
+        },
+        "vmResourceGroup": {
+            "value": "USRG"
+        },
+        "vmNamePrefix": {
+            "value": "SalesPC1"
+        },
+        "vmLocation": {
+            "value": "eastus"
+        },
+        "availabilityOption": {
+            "value": "AvailabilityZone"
+        },
+        "availabilitySetName": {
+            "value": ""
+        },
+        "createAvailabilitySet": {
+            "value": false
+        },
+        "availabilitySetUpdateDomainCount": {
+            "value": 5
+        },
+        "availabilitySetFaultDomainCount": {
+            "value": 2
+        },
+        "availabilityZone": {
+            "value": 1
+        },
+        "vmImageType": {
+            "value": "Gallery"
+        },
+        "vmSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "vmNumberOfInstances": {
+            "value": 2
+        },
+        "vmDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "vmDiskSizeGB": {
+            "value": 0
+        },
+        "vmHibernate": {
+            "value": false
+        },
+        "bootDiagnostics": {
+            "value": {
+                "enabled": true
+            }
+        },
+        "securityType": {
+            "value": "Standard"
+        },
+        "secureBoot": {
+            "value": false
+        },
+        "vTPM": {
+            "value": false
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "USRG"
+        },
+        "existingVnetName": {
+            "value": "USVNET"
+        },
+        "existingSubnetName": {
+            "value": "AVDSubnet"
+        },
+        "createNetworkSecurityGroup": {
+            "value": false
+        },
+        "aadJoin": {
+            "value": false
+        },
+        "administratorAccountUsername": {
+            "value": "ramakant@adatum.com"
+        },
+        "administratorAccountPassword": {
+            "value": "ramakant@12345"
+        },
+        "domain": {
+            "value": ""
+        },
+        "ouPath": {
+            "value": ""
+        },
+        "vmAdministratorAccountUsername": {
+            "value": "ramakant"
+        },
+        "vmAdministratorAccountPassword": {
+            "value": "ramakant@12345"
+        },
+        "addToWorkspace": {
+            "value": false
+        },
+        "applicationGroupTags": {
+            "value": {}
+        },
+        "availabilitySetTags": {
+            "value": {}
+        },
+        "hostpoolTags": {
+            "value": {}
+        },
+        "imageTags": {
+            "value": {}
+        },
+        "networkInterfaceTags": {
+            "value": {}
+        },
+        "networkSecurityGroupTags": {
+            "value": {}
+        },
+        "virtualMachineTags": {
+            "value": {}
+        },
+        "apiVersion": {
+            "value": "2021-09-03-preview"
+        },
+        "deploymentId": {
+            "value": "1ec8ae8d-a10c-4f57-8abb-96e5708e408a"
+        },
+        "vmGalleryImageOffer": {
+            "value": "Windows-10"
+        },
+        "vmGalleryImagePublisher": {
+            "value": "MicrosoftWindowsDesktop"
+        },
+        "vmGalleryImageSKU": {
+            "value": "19h2-evd"
+        },
+        "vmGalleryImageHasPlan": {
+            "value": false
+        },
+        "maxSessionLimit": {
+            "value": 2
+        },
+        "systemData": {
+            "value": {
+                "hostpoolUpdateFeature": false,
+                "aadJoinPreview": false,
+                "sessionHostConfigurationVersion": ""
+            }
+        }
+    }
+}
